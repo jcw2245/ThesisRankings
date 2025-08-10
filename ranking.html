@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Five Ranks — Datawrapper Slides</title>
+
+<style>
+  :root { --accent:#116466; }
+  body { margin:0; font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; background:#fafafa; color:#111; }
+  .content { max-width:900px; margin:48px auto; padding:0 16px; }
+  h1 { margin:0 0 12px; font-size:1.8rem; }
+  .sub { color:#555; margin-bottom:20px; }
+
+  .viewer { position:relative; background:#fff; border-radius:16px; box-shadow:0 8px 24px rgba(0,0,0,.08); padding:18px; }
+  .rank { display:none; min-height:420px; justify-content:center; align-items:center; flex-direction:column; }
+  .rank.active { display:flex; }
+  .rank h2 { margin:8px 0 12px; font-size:1.2rem; color:#333; }
+
+
+  .rank iframe {
+    width:100% !important;
+    border:0;
+    min-height:420px; 
+  }
+
+  .controls { display:flex; gap:12px; justify-content:space-between; align-items:center; margin-top:14px; }
+  .btn { appearance:none; border:0; padding:10px 14px; border-radius:10px; background:var(--accent); color:#fff; font-weight:600; cursor:pointer; }
+  .btn[disabled]{ opacity:.45; cursor:not-allowed; }
+  .dots { display:flex; gap:6px; }
+  .dot { width:10px; height:10px; border-radius:50%; background:#cfd8dc; border:0; cursor:pointer; }
+  .dot.active { background:var(--accent); }
+</style>
+</head>
+<body>
+  <div class="content">
+    <h1>GSR by Ranking of the Teams Win Loss Percentage</h1>
+    <div class="sub">Click through each rank to view its chart.</div>
+
+    <div class="viewer" id="viewer" tabindex="0" aria-label="Ranked charts viewer">
+
+      <section class="rank active" data-rank="1">
+        <h2>Rank 1</h2>
+        <iframe title="Rank One for Women's Basketball" aria-label="Bar Chart" id="datawrapper-chart-s0vll" src="https://datawrapper.dwcdn.net/s0vll/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="1001" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+      </section>
+
+      <section class="rank" data-rank="2">
+        <h2>Rank 2</h2>
+        <iframe title="Rank Two for Women's Basketball" aria-label="Bar Chart" id="datawrapper-chart-LzJ2U" src="https://datawrapper.dwcdn.net/LzJ2U/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="2245" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+      </section>
+
+
+      <section class="rank" data-rank="3">
+        <h2>Rank 3</h2>
+        <iframe
+          title="Rank 3 for Women's Basketball"
+          aria-label="Bar Chart"
+          src="https://datawrapper.dwcdn.net/yCTGx/1/"
+          scrolling="no"
+          frameborder="0"
+          height="480"
+          data-external="1"></iframe>
+      </section>
+
+
+      <section class="rank" data-rank="4">
+        <h2>Rank 4</h2>
+        <iframe title="Rank Four for Women's Basketball" aria-label="Bar Chart" id="datawrapper-chart-AAwkQ" src="https://datawrapper.dwcdn.net/AAwkQ/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="2116" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+      </section>
+
+
+      <section class="rank" data-rank="5">
+        <h2>Rank 5</h2>
+        <iframe title="Rank Five for Women's Basketball" aria-label="Bar Chart" id="datawrapper-chart-7mgMi" src="https://datawrapper.dwcdn.net/7mgMi/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="596" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}})}();
+</script>
+      </section>
+
+      <div class="controls">
+        <button class="btn" id="prev">◀ Prev</button>
+        <div class="dots" id="dots"></div>
+        <button class="btn" id="next">Next ▶</button>
+      </div>
+    </div>
+  </div>
+
+<!-- Datawrapper auto-resize script (include ONCE) -->
+<script>
+!function(){
+  "use strict";
+  window.addEventListener("message",function(e){
+    if(void 0!==e.data["datawrapper-height"]){
+      var iframes=document.querySelectorAll("iframe");
+      for(var key in e.data["datawrapper-height"]){
+        for(var i=0;i<iframes.length;i++){
+          if(iframes[i].contentWindow===e.source){
+            iframes[i].style.height = e.data["datawrapper-height"][key] + "px";
+          }
+        }
+      }
+    }
+  });
+}();
+</script>
+
+<script>
+/* Simple slider between ranks */
+const ranks = Array.from(document.querySelectorAll('.rank'));
+const prevBtn = document.getElementById('prev');
+const nextBtn = document.getElementById('next');
+const dotsWrap = document.getElementById('dots');
+let current = 0;
+
+// dots
+ranks.forEach((_, i) => {
+  const b = document.createElement('button');
+  b.className = 'dot' + (i===0 ? ' active' : '');
+  b.setAttribute('aria-label', `Go to Rank ${i+1}`);
+  b.addEventListener('click', () => go(i));
+  dotsWrap.appendChild(b);
+});
+const dots = [...dotsWrap.children];
+
+function update(){
+  ranks.forEach((el, i) => el.classList.toggle('active', i === current));
+  dots.forEach((d, i) => d.classList.toggle('active', i === current));
+  prevBtn.disabled = current === 0;
+  nextBtn.disabled = current === ranks.length - 1;
+}
+function go(i){
+  current = Math.max(0, Math.min(ranks.length - 1, i));
+  update();
+}
+prevBtn.addEventListener('click', () => go(current - 1));
+nextBtn.addEventListener('click', () => go(current + 1));
+
+// keyboard nav
+document.getElementById('viewer').addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight') go(current + 1);
+  if (e.key === 'ArrowLeft')  go(current - 1);
+});
+update();
+</script>
+</body>
+</html>
