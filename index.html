@@ -86,7 +86,6 @@
     </div>
   </div>
 
-<!-- Datawrapper auto-resize script (include ONCE) -->
 <script>
 !function(){
   "use strict";
@@ -106,14 +105,12 @@
 </script>
 
 <script>
-/* Simple slider between ranks */
 const ranks = Array.from(document.querySelectorAll('.rank'));
 const prevBtn = document.getElementById('prev');
 const nextBtn = document.getElementById('next');
 const dotsWrap = document.getElementById('dots');
 let current = 0;
 
-// dots
 ranks.forEach((_, i) => {
   const b = document.createElement('button');
   b.className = 'dot' + (i===0 ? ' active' : '');
@@ -136,7 +133,6 @@ function go(i){
 prevBtn.addEventListener('click', () => go(current - 1));
 nextBtn.addEventListener('click', () => go(current + 1));
 
-// keyboard nav
 document.getElementById('viewer').addEventListener('keydown', e => {
   if (e.key === 'ArrowRight') go(current + 1);
   if (e.key === 'ArrowLeft')  go(current - 1);
